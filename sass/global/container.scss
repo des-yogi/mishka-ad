@@ -1,0 +1,37 @@
+.container {
+  min-width: 260px;
+  //width: 81.25%;
+  margin: 0 auto;
+  padding: 0 9.375%;
+
+  @media #{$tablet-width} {
+    padding: 0 6.5105%;
+  }
+
+  @media #{$desktop-width} {
+    padding: 0 4.378%;
+  }
+
+  /* @media #{$wide-desktop-width} {
+    //widht: $fixed-width;
+    padding-left: $padding-computed + 50;
+    padding-right: $padding-computed + 50;
+  } */
+
+  outline: 1px solid red;
+}
+
+.container-fixed {
+  width: 81.25%;
+  margin: 0 auto;
+
+  @media #{$tablet-width} {
+    width: 86.979%;
+  }
+
+  @media #{$desktop-width} {
+    width: 91.244%;
+  }
+
+  outline: 1px solid green;
+}
