@@ -18,6 +18,17 @@ $font-size-base: 15px;
 $line-height-base: 30px;
 $line-height-auto: 1.3;
 
+$border-color: #ececec;
+
+$padding-computed: calc((100% - 1200px) / 2);
 
 $tablet-width: "(min-width: 668px)";
 $desktop-width: "(min-width: 1050px)";
+$wide-desktop-width: "(min-width: 1200px)";
+
+$olb: 1px solid black;
+$olblue: 1px solid blue;
+$olred: 1px solid red;
+$olgr: 1px solid green;
+$oly: 1px solid yellow;
+

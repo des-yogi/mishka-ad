@@ -8,6 +8,14 @@ html {
 
 body {
   min-width: 320px;
+  max-width: 1200px;
+  margin: 0;
+
+  @media (min-width: 1200px) {
+    margin: 0 auto;
+  }
+
+  outline: 1px solid blue;
 }
 
 *,
@@ -34,7 +42,7 @@ blockquote {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
