@@ -1,0 +1,44 @@
+.page-footer {
+  padding: 25px 0;
+  background-color: $bg-second-color;
+}
+
+.page-footer__logo {
+  display: none;
+}
+
+.page-footer__copyrights {
+  padding-top: 20px;
+}
+
+.page-footer__copyrights-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  text-decoration: none;
+  color: $title-color;
+
+  svg {
+    fill: $icon-hvr-color;
+  }
+
+  &:hover {
+
+    svg {
+      fill: $link-hvr-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+
+  p {
+    padding-right: 25px;
+    padding-bottom: 5px;
+  }
+}

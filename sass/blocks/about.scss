@@ -1,0 +1,35 @@
+.about {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about__text {
+
+  h2 {
+    margin-bottom: 30px;
+    font-size: $font-size-base * 1.7;
+    font-weight: 700;
+    line-height: $line-height-base;
+  }
+}
+
+.about__item {
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 30px;
+    font-size: $font-size-base * 1.13;
+    font-weight: 700;
+    line-height: $line-height-auto;
+    color: $title-color;
+  }
+
+  &:last-child {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

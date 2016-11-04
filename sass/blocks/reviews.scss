@@ -1,0 +1,66 @@
+.reviews {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background: url(../img/bg-zigzag-line.svg) repeat-x 50% 100%;
+  background-size: auto 7px;
+
+  h2 {
+    margin-bottom: 33px;
+    font-size: $font-size-base * 1.7;
+    font-weight: 700;
+    line-height: $line-height-base;
+  }
+}
+
+.reviews__post {
+  margin-bottom: 30px;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+.reviews__author {
+  display: block;
+  margin-bottom: 30px;
+  font-size: $font-size-base * 1.2;
+  font-style: normal;
+  font-weight: 700;
+  line-height: $line-height-base / 1.25;
+
+  span {
+    font-weight: 400;
+    line-height: $line-height-base;
+  }
+}
+
+.reviews__toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.btn-browse {
+  width: 50%;
+  height: 52px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid $border-color;
+  cursor: pointer;
+
+  &--prev {
+    background: url(../img/icon-left-arrow.svg) no-repeat 50% 50% white;
+  }
+
+  &--next {
+    background: url(../img/icon-right-arrow.svg) no-repeat 50% 50% white;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
