@@ -54,23 +54,16 @@
   position: absolute;
   top: 32px;
   right: 0;
+  width: 20px;
+  height: 14px;
+  background: url(../img/icon-menu-open.svg) no-repeat 50% 50% transparent;
   border: none;
   cursor: pointer;
 
-  &--close {
-    //display: none;
-    display: block;
+  &--nojs {
     width: 21px;
     height: 20px;
     background: url(../img/icon-menu-close.svg) no-repeat 50% 50% transparent;
-  }
-
-  &--nojs {
-    display: none;
-    //display: block;
-    width: 20px;
-    height: 14px;
-    background: url(../img/icon-menu-open.svg) no-repeat 50% 50% transparent;
   }
 
   &:hover {
@@ -93,7 +86,7 @@
   width: 100%;
 
   &--nojs {
-    //display: block;
+    display: block;
   }
 }
 
@@ -183,3 +176,39 @@
   }
 }
 
+.main-nav__promo {
+  background: url(../img/hero-mobile@1x.jpg) no-repeat 50% -19px #fbfbfb;
+
+  h1 {
+    padding-top: 75px;
+    padding-bottom: 120px;
+    font-size: $font-size-base * 1.8;
+    font-weight: 700;
+    line-height: $line-height-base;
+    text-align: center;
+  }
+}
+
+.main-nav__promo-item {
+  text-align: left;
+
+  a {
+    display: block;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: $font-size-base * 1.27;
+    font-weight: 700;
+    line-height: $line-height-base * 0.8;
+    color: $text-inv-color;
+    text-decoration: none;
+  }
+}
+
+.main-nav__interier {
+  background-color: $btn1-bg-color;
+}
+
+.main-nav__toys {
+  background-color: $btn2-bg-color;
+}

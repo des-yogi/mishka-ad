@@ -20,7 +20,7 @@ var server = require("browser-sync").create();
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer({browsers: [
         "last 1 version",
@@ -51,7 +51,7 @@ gulp.task("images", function() {
 });
 
 gulp.task ("symbols", function() {
-  return gulp.src("build/img/icons/*.svg")
+  return gulp.src("img/icons/*.svg")
   .pipe(svgmin())
   .pipe(svgstore({
     inlineSvg: true
@@ -63,8 +63,8 @@ gulp.task ("symbols", function() {
 gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
-    "img/**",
-    "js/**.js",
+    "img/*.{jpg,png,gif,svg}",
+    "js/**/*.js",
     "*.html"
   ], {
     base: "."
