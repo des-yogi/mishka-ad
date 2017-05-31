@@ -17,6 +17,8 @@ var del = require("del");
 var run = require("run-sequence");
 var server = require("browser-sync").create();
 
+require('events').EventEmitter.prototype._maxListeners = 100;
+
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())

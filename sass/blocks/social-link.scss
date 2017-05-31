@@ -1,0 +1,10 @@
+.social-link {
+  @include text-hide();
+
+  &:hover {
+    fill: $icon-hvr-color  ;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
