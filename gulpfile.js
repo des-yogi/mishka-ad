@@ -104,8 +104,9 @@ gulp.task("serve", function() {
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html",["copyHtml"]);
-  gulp.watch("build/*.html").on("change", server.reload);
   gulp.watch("js/**/*.js", ["scripts"]);
+  gulp.watch("build/*.html").on("change", server.reload);
+  gulp.watch("sass/**").on("change", server.reload);
   gulp.watch("build/js/**/*.js").on("change", server.reload);
 });
 

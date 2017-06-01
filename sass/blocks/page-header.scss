@@ -1,2 +1,13 @@
+.page-header__title {
+    background-color: $bg-second-color;
 
-
+    h1 {
+      padding-top: 75px;
+      padding-bottom: 75px;
+      font-size: 27px;
+      font-weight: $font-weight--bold;
+      line-height: $line-height-base;
+      text-align: center;
+      color: $title-color;
+    }
+}
