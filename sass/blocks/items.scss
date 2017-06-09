@@ -1,0 +1,75 @@
+.item {
+  margin-bottom: 30px;
+  border: 1px solid $border-color;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.item__description {
+  width: auto;
+  margin: auto;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 28px;
+  padding-bottom: 27px;
+}
+
+.item__photo {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+.item__title {
+  padding-bottom: 23px;
+  border-bottom: 1px solid $border-color;
+
+  h4 {
+    margin-bottom: 10px;
+    font-size: $font-size-base + 2px;
+    font-weight: $font-weight--bold;
+    line-height: 24px;
+    color: $title-color;
+  }
+  p {
+    font-size: $font-size-base - 2px;
+    color: $text-color;
+  }
+}
+
+.item__price {
+  padding-top: 25px;
+  //padding-bottom: 22px;
+
+  @include clearfix();
+
+  &--text {
+    display: block;
+    float: left;
+    font-size: $font-size-base;
+    font-weight: $font-weight--bold;
+    line-height: 24px;
+    color: $title-color;
+  }
+  &--icon {
+    display: block;
+    float: right;
+    width: 21px;
+    height: 19px;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &:hover {
+      fill: $icon-hvr-color;
+      opacity: 1;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

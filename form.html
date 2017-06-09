@@ -4,7 +4,7 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Mishka Адаптивный | Каталог</title>
+  <title>Mishka Адаптивный | Вязание на заказ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <script>
@@ -42,11 +42,11 @@
           <ul class="main-nav__list  main-nav__list--nojs">
             <li class="main-nav__item">
               <div class="main-nav__item-wrap">
-                <a>Каталог товаров</a>
+                <a href="catalog.html">Каталог товаров</a>
               </div>
             </li>
             <li class="main-nav__item">
-             <a href="form.html">Вязание на заказ</a>
+             <a>Вязание на заказ</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__search" href="#">
@@ -83,111 +83,134 @@
 
     <section class="page-header__title">
       <div class="container">
-        <h1>Каталог товаров</h1>
+        <h1>Вязание на заказ</h1>
       </div>
     </section>
 
   </header>
 
-  <main class="main-catalog">
+  <main class="main-form">
 
-    <div class="container">
-      <article class="items">
+    <article class="form-order">
 
-        <section class="item">
-          <img class="item__photo" src="img/photo-1-mobile@1x.jpg" alt="items photo" width="260" height="195">
+      <div class="container">
+        <p class="form-order__intro">
+          Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+        </p>
+      </div>
 
-          <div class="item__description">
-            <div class="item__title">
-              <h4>Зайчик-попрыгайчик</h4>
-              <p>Рост 30 см, вес 200 г</p>
+      <form class="form-order__content" action="/" method="post">
+
+        <div class="form-order__backgr">
+          <div class="container">
+            <div class="form-order__inner">
+              <p class="form-order__caption">Тип</p>
             </div>
-            <div class="item__price">
-              <span class="item__price--text">
-                1 200 руб.
-              </span>
-              <span class="item__price--icon">
-                <svg width="21" height="19">
-                  <use xlink:href="#icon-cart"></use>
-                </svg>
-              </span>
-            </div>
-          </div>
-        </section>
-
-        <section class="item">
-          <img class="item__photo" src="img/photo-2-mobile@1x.jpg" alt="items photo" width="260" height="195">
-
-          <div class="item__description">
-            <div class="item__title">
-              <h4>Корзинка для белья</h4>
-              <p>Диаметр 15 см, высота 10 см</p>
-            </div>
-            <div class="item__price">
-              <span class="item__price--text">
-                690 руб.
-              </span>
-              <span class="item__price--icon">
-                <svg width="21" height="19">
-                  <use xlink:href="#icon-cart"></use>
-                </svg>
-              </span>
-            </div>
-          </div>
-        </section>
-
-        <section class="item">
-          <img class="item__photo" src="img/photo-3-mobile@1x.jpg" alt="items photo" width="260" height="195">
-
-          <div class="item__description">
-            <div class="item__title">
-              <h4>Большая корзинка для игрушек</h4>
-              <p>Диаметр 30 см, высота 30 см</p>
-            </div>
-            <div class="item__price">
-              <span class="item__price--text">
-              1500 руб.
-              </span>
-              <span class="item__price--icon">
-                <svg width="21" height="19">
-                  <use xlink:href="#icon-cart"></use>
-                </svg>
-              </span>
-            </div>
-          </div>
-        </section>
-
-      </article>
-
-      <article class="video-item">
-        <div class="container">
-          <header class="video-item__header">
-            <!-- <img src="img/icon-feature-1.svg" alt="flower icon" width="32" height="37"> -->
-            <img src="img/icon-video.svg" width="32" height="22" alt="video icon">
-            <h4>Процесс <br>производства</h4>
-          </header>
-        </div>
-
-        <div class="video-item__play">
-          <a class="video-item__btn">
-            <img src="img/icon-play.svg" alt="play button" width="101" height="">
-          </a>
-        </div>
-
-        <div class="container">
-          <div class="video-item__text">
-            <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <button class="btn" type="button">
-              Сделать заказ
-            </button>
+            <input id="accesories" type="radio" name="type" checked>
+            <label class="radio-btn" for="accesories">
+              Аксессуар для интерьера
+            </label>
+            <input id="kids-toy" type="radio" name="type">
+            <label class="radio-btn" for="kids-toy">
+              Детская игрушка
+            </label>
           </div>
         </div>
 
-      </article>
+        <div class="form-order__backgr">
+          <div class="container">
+            <div class="form-order__inner">
+              <p class="form-order__caption">Цвет</p>
+            </div>
+            <input id="color-white" type="checkbox" name="color-white" checked>
+            <label class="checkbox-btn" for="color-white">
+              Белый
+            </label>
+            <br>
+            <input id="color-grey" type="checkbox" name="color-grey" checked>
+            <label class="checkbox-btn" for="color-grey">
+              Серый
+            </label>
+            <br>
+            <input id="color-tiffany" type="checkbox" name="color-tiffany">
+            <label class="checkbox-btn" for="color-tiffany">
+              «Тиффани»
+            </label>
+            <br>
+            <input id="color-black" type="checkbox" name="color-black">
+            <label class="checkbox-btn" for="color-black">
+              Черный
+            </label>
+            <br>
+            <input id="color-pink" type="checkbox" name="color-pink">
+            <label class="checkbox-btn" for="color-pink">
+              Розовый
+            </label>
+            <br>
+            <input id="color-orange" type="checkbox" name="color-orange">
+            <label class="checkbox-btn" for="color-orange">
+              Оранжевый
+            </label>
+          </div>
+        </div>
+
+        <div class="form-order__backgr">
+          <div class="container">
+            <div class="form-order__inner">
+              <p class="form-order__caption">ФИО</p>
+            </div>
+            <label class="form-order__fio" for="person-name">
+              Имя:
+            </label>
+            <input id="person-name" type="text" name="person-name" placeholder="Введите ваше имя" required>
+            <label class="form-order__fio" for="person-surename">
+              Фамилия:
+            </label>
+            <input id="person-surename" type="text" name="person-surename" placeholder="Укажите фамилию" required>
+            <br>
+            <label class="form-order__fio" for="person-patronymic">
+              Отчество:
+            </label>
+            <input id="person-patronymic" type="text" name="person-patronymic" placeholder="Отчество, если желаете">
+          </div>
+        </div>
+
+        <div class="form-order__backgr">
+          <div class="container">
+            <div class="form-order__inner">
+              <p class="form-order__caption  form-order__caption--tel-mail">
+                Тел
+              </p>
+            </div>
+            <input id="phone" type="tel" name="phone" placeholder="+3 XXX XX XX" required>
+            <div class="form-order__inner">
+              <p class="form-order__caption  form-order__caption--tel-mail">
+                E-mail
+              </p>
+            </div>
+            <input id="email" type="email" name="email" placeholder="Ваш Email" required>
+          </div>
+        </div>
+
+        <div class="form-order__backgr">
+          <div class="container">
+            <div class="form-order__inner">
+              <p class="form-order__caption  form-order__caption--add">
+                Доп
+              </p>
+            </div>
+            <br>
+            <textarea id="add-text" name="add-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+
+            <p class="form-order__note">Все поля обязательны для заполнения</p>
+            <button class="btn" type="submit" name="submit">Отправить</button>
+          </div>
+        </div>
+
+      </form>
 
 
-
-    </div>
+    </article>
 
   </main>
 
