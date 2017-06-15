@@ -30,8 +30,8 @@
             <div class="main-nav__logo">
               <a href="index.html">Mishka
                 <picture>
-                  <source srcset="img/logo-desktop.svg" media="(min-width: 1050px)">
-                  <source srcset="img/logo-tablet.svg" media="(min-width: 668px)">
+                  <source srcset="img/logo-desktop.svg" media="(min-width: 1150px)">
+                  <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
                   <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип «Mishka»">
                 </picture>
               </a>
@@ -40,15 +40,15 @@
           </div>
 
           <ul class="main-nav__list  main-nav__list--nojs">
-            <li class="main-nav__item">
+            <li class="main-nav__item  main-nav__item--catalog">
               <div class="main-nav__item-wrap">
-                <a>Каталог товаров</a>
+                <a class="main-nav__catalog" href="catalog.html">Каталог товаров</a>
               </div>
             </li>
-            <li class="main-nav__item">
-             <a href="form.html">Вязание на заказ</a>
+            <li class="main-nav__item  main-nav__item--order">
+             <a class="main-nav__order" href="form.html">Вязание на заказ</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item  main-nav__item--search">
               <a class="main-nav__search" href="#">
                 <div class="main-nav__search-icon">
                   <svg width="18" height="19">
@@ -67,13 +67,13 @@
                 </div>
               </a>
             </li>
-            <li class="main-nav__item  main-nav__item--initially-hidden">
+            <li class="main-nav__item  main-nav__item--new-goods  main-nav__item--initially-hidden">
               <a href="#">Новые поступления</a>
             </li>
-            <li class="main-nav__item  main-nav__item--initially-hidden">
+            <li class="main-nav__item  main-nav__item--sale  main-nav__item--initially-hidden">
               <a href="#">Распродажа</a>
             </li>
-            <li class="main-nav__item  main-nav__item--initially-hidden">
+            <li class="main-nav__item  main-nav__item--delivery  main-nav__item--initially-hidden">
               Бесплатная доставка по России
             </li>
           </ul>
@@ -92,10 +92,15 @@
   <main class="main-catalog">
 
     <div class="container">
+
       <article class="items">
 
         <section class="item">
-          <img class="item__photo" src="img/photo-1-mobile@1x.jpg" alt="items photo" width="260" height="195">
+          <picture>
+            <source srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+            <source srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="item__photo" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@1x.jpg 1x, img/photo-1-mobile@2x.jpg 2x" alt="items photo" width="260" height="195">
+          </picture>
 
           <div class="item__description">
             <div class="item__title">
@@ -116,7 +121,11 @@
         </section>
 
         <section class="item">
-          <img class="item__photo" src="img/photo-2-mobile@1x.jpg" alt="items photo" width="260" height="195">
+          <picture>
+            <source srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+            <source srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="item__photo" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@1x.jpg 1x, img/photo-2-mobile@2x.jpg 2x" alt="items photo" width="260" height="195">
+          </picture>
 
           <div class="item__description">
             <div class="item__title">
@@ -137,7 +146,11 @@
         </section>
 
         <section class="item">
-          <img class="item__photo" src="img/photo-3-mobile@1x.jpg" alt="items photo" width="260" height="195">
+          <picture>
+            <source srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+            <source srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="item__photo" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@1x.jpg 1x, img/photo-3-mobile@2x.jpg 2x" alt="items photo" width="260" height="195">
+          </picture>
 
           <div class="item__description">
             <div class="item__title">
@@ -160,32 +173,39 @@
       </article>
 
       <article class="video-item">
-        <div class="container">
-          <header class="video-item__header">
-            <!-- <img src="img/icon-feature-1.svg" alt="flower icon" width="32" height="37"> -->
-            <img src="img/icon-video.svg" width="32" height="22" alt="video icon">
-            <h4>Процесс <br>производства</h4>
-          </header>
+
+        <div class="video-item__header-wrapper">
+          <div class="container">
+            <header class="video-item__header">
+              <img src="img/icon-video.svg" width="32" height="22" alt="video icon">
+              <h4>Процесс <br>производства</h4>
+            </header>
+          </div>
         </div>
 
         <div class="video-item__play">
+          <picture>
+            <source srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x" media="(min-width: 1150px)">
+            <source srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img class="video-item__bg-img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@1x.jpg 1x, img/video-mobile@2x.jpg 2x" alt="video box" width="260" height="150">
+          </picture>
           <a class="video-item__btn">
             <img src="img/icon-play.svg" alt="play button" width="101" height="">
           </a>
         </div>
 
-        <div class="container">
-          <div class="video-item__text">
-            <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-            <button class="btn" type="button">
-              Сделать заказ
-            </button>
+        <div class="video-item__text-wrapper">
+          <div class="container">
+            <div class="video-item__text">
+              <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+              <button class="btn" type="button">
+                Сделать заказ
+              </button>
+            </div>
           </div>
         </div>
 
       </article>
-
-
 
     </div>
 
@@ -193,44 +213,45 @@
 
   <footer class="page-footer">
     <div class="container">
-      <section class="page-footer__logo">
-        <a href="index.html">
-          <svg width="102" height="34">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
-          </svg>
-        </a>
-      </section>
+      <div class="page-footer__inner">
 
-      <article class="social">
-        <a class="social-link  social-link--insta" href="#">Instagram
-          <svg class="insta" width="22" height="21">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
-          </svg>
-        </a>
-        <a class="social-link  social-link--fb" href="#">Facebook
-          <svg class="fb" width="15" height="28">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
-          </svg>
-        </a>
-        <a class="social-link  social-link--tw" href="#">Twitter
-          <svg class="tw" width="23" height="20">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
-          </svg>
-        </a>
-      </article>
+        <section class="page-footer__logo">
+          <a href="index.html">
+            <svg width="102" height="34">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-footer"></use>
+            </svg>
+          </a>
+        </section>
 
-      <div class="page-footer__copyrights">
-        <a class="page-footer__copyrights-link" href="#" title="HTML Academy logo">
-          <p>Разработано</p>
-          <svg width="27" height="34">
-            <use xlink:href="#logo-htmlacademy">
-            </use>
-          </svg>
-          <!-- <img src="" width="27" height="34" alt="HTML Academy logo"> -->
-        </a>
+        <article class="s-block">
+          <a class="s-block-link  s-block-link--insta" href="#">Instagram
+            <svg class="insta" width="22" height="21">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
+          <a class="s-block-link  s-block-link--fb" href="#">Facebook
+            <svg class="fb" width="15" height="28">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+          <a class="s-block-link  s-block-link--tw" href="#">Twitter
+            <svg class="tw" width="23" height="20">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </article>
+
+        <div class="page-footer__copyrights">
+          <a class="page-footer__copyrights-link" href="#" title="HTML Academy logo">
+            <p>Разработано</p>
+            <svg width="27" height="34">
+              <use xlink:href="#logo-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
+
       </div>
     </div>
-
   </footer>
 
   <script src="js/scripts.min.js"></script>

@@ -1,14 +1,45 @@
 .page-footer {
   padding: 25px 0;
   background-color: $bg-second-color;
+
+  @media #{$tablet-width} {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.page-footer__inner {
+  @media #{$tablet-width} {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .page-footer__logo {
   display: none;
+
+  @media #{$tablet-width} {
+    display: block;
+
+    svg {
+      &:hover {
+        fill: $link-hvr-color;
+      }
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
 }
 
 .page-footer__copyrights {
   padding-top: 20px;
+
+  @media #{$tablet-width} {
+    padding-top: 0;
+  }
 }
 
 .page-footer__copyrights-link {

@@ -24,8 +24,9 @@ $border-color: #ececec;
 
 $padding-computed: calc((100% - 1200px) / 2);
 
-$tablet-width: "(min-width: 668px)";
-$desktop-width: "(min-width: 1050px)";
+$sm-tablet-width: "(min-width: 680px)";
+$tablet-width: "(min-width: 768px)";
+$desktop-width: "(min-width: 1150px)";
 $wide-desktop-width: "(min-width: 1200px)";
 
 $olb: 1px solid black;

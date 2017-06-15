@@ -81,18 +81,24 @@ input[type=email] {
   margin-bottom: 20px;
   border: none;
   border-bottom: 2px solid black;
+
+  &:hover {
+    border-color: $icon-hvr-color;
+  }
+  &:focus {
+    border-color: $icon-hvr-color;
+  }
+  &.error {
+    border-color: $input-error-color;
+  }
 }
 
 input[type=tel] {
   margin-bottom: 35px;
-/*   background: url(../img/icon-phone.svg) no-repeat center right;
-background-size: 25px 24px; */
 }
 
 input[type=email] {
   margin-bottom: 10px;
-/*   background: url(../img/icon-mail.svg) no-repeat center right;
-background-size: 32px 21px; */
 }
 
 textarea {
@@ -101,9 +107,51 @@ textarea {
   padding-left: 10px;
   margin-bottom: 15px;
   border: 2px solid black;
+
+  &:hover {
+    border-color: $icon-hvr-color;
+  }
+  &:focus {
+    border-color: $icon-hvr-color;
+  }
+  &.error {
+    border-color: $input-error-color;
+  }
 }
 
 .form-order__note {
   margin-bottom: 20px;
   font-size: 13.5px;
+}
+
+.form-order__input-wrapper {
+  position: relative;
+
+  .form-order__icon-phone,
+  .form-order__icon-mail {
+    position: absolute;
+    fill: black;
+    opacity: 0.2;
+  }
+
+}
+
+.form-order__icon-phone {
+  bottom: 52px;
+  right: 3px;
+  width: 25px;
+  height: 24px;
+}
+
+.form-order__icon-mail {
+  bottom: 28px;
+  right: 3px;
+  width: 32px;
+  height: 21px;
+}
+
+#phone:hover + .form-order__icon-phone,
+#email:hover + .form-order__icon-mail {
+  fill: $input-hvr-color;
+  opacity: 1;
 }

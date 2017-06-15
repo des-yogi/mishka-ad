@@ -18,6 +18,56 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
+
+  &--write-review {
+    @media #{$tablet-width} {
+      width: auto;
+      padding-left: 36px;
+      padding-right: 36px;
+      transform: translateY(-7px);
+      order: -4;
+    }
+  }
+
+  &--write-us {
+    @media #{$tablet-width} {
+      width: auto;
+      margin: auto;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}
+
+.btn-browse {
+  width: 50%;
+  height: 52px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid $border-color;
+  cursor: pointer;
+
+  &--prev {
+    background: url(../img/icon-left-arrow.svg) no-repeat 50% 50% white;
+  }
+
+  &--next {
+    background: url(../img/icon-right-arrow.svg) no-repeat 50% 50% white;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media #{$tablet-width} {
+    width: 50px;
+    border: none;
+    background-color: transparent;
+  }
 }
 
 .radio-btn {
