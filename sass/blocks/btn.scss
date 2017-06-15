@@ -73,17 +73,18 @@
 .radio-btn {
   position: relative;
   display: block;
+  height: 60px;
   padding-left: 60px;
   padding-bottom: 20px;
-  padding-top: 2px;
+  padding-top: 10px;
   font-size: $font-size-base + 2px;
   font-weight: 700;
   line-height: 18px;
   cursor: pointer;
 
-  &:last-child {
+  /* &:last-child {
     padding-top: 10px;
-  }
+  } */
 
   &::before {
     position: absolute;

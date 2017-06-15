@@ -103,117 +103,170 @@
 
         <div class="form-order__backgr">
           <div class="container">
-            <div class="form-order__inner">
-              <p class="form-order__caption">Тип</p>
+
+            <div class="form-order__block-wrapper">
+
+              <div class="form-order__inner">
+                <p class="form-order__caption">Тип</p>
+              </div>
+
+              <div class="form-order__input-wrapper">
+                <input id="accesories" type="radio" name="type" checked>
+                <label class="radio-btn" for="accesories">
+                  Аксессуар для интерьера
+                </label>
+                <input id="kids-toy" type="radio" name="type">
+                <label class="radio-btn" for="kids-toy">
+                  Детская игрушка
+                </label>
+              </div>
+
             </div>
-            <input id="accesories" type="radio" name="type" checked>
-            <label class="radio-btn" for="accesories">
-              Аксессуар для интерьера
-            </label>
-            <input id="kids-toy" type="radio" name="type">
-            <label class="radio-btn" for="kids-toy">
-              Детская игрушка
-            </label>
+
           </div>
         </div>
 
         <div class="form-order__backgr">
           <div class="container">
-            <div class="form-order__inner">
-              <p class="form-order__caption">Цвет</p>
+
+            <div class="form-order__block-wrapper">
+
+              <div class="form-order__inner">
+                <p class="form-order__caption">Цвет</p>
+              </div>
+
+              <div class="form-order__input-wrapper">
+                <input id="color-white" type="checkbox" name="color-white" checked>
+                <label class="checkbox-btn" for="color-white">
+                  Белый
+                </label>
+                <br>
+                <input id="color-grey" type="checkbox" name="color-grey" checked>
+                <label class="checkbox-btn" for="color-grey">
+                  Серый
+                </label>
+                <br>
+                <input id="color-tiffany" type="checkbox" name="color-tiffany">
+                <label class="checkbox-btn" for="color-tiffany">
+                  «Тиффани»
+                </label>
+                <br>
+                <input id="color-black" type="checkbox" name="color-black">
+                <label class="checkbox-btn" for="color-black">
+                  Черный
+                </label>
+                <br>
+                <input id="color-pink" type="checkbox" name="color-pink">
+                <label class="checkbox-btn" for="color-pink">
+                  Розовый
+                </label>
+                <br>
+                <input id="color-orange" type="checkbox" name="color-orange">
+                <label class="checkbox-btn" for="color-orange">
+                  Оранжевый
+                </label>
+              </div>
+
             </div>
-            <input id="color-white" type="checkbox" name="color-white" checked>
-            <label class="checkbox-btn" for="color-white">
-              Белый
-            </label>
-            <br>
-            <input id="color-grey" type="checkbox" name="color-grey" checked>
-            <label class="checkbox-btn" for="color-grey">
-              Серый
-            </label>
-            <br>
-            <input id="color-tiffany" type="checkbox" name="color-tiffany">
-            <label class="checkbox-btn" for="color-tiffany">
-              «Тиффани»
-            </label>
-            <br>
-            <input id="color-black" type="checkbox" name="color-black">
-            <label class="checkbox-btn" for="color-black">
-              Черный
-            </label>
-            <br>
-            <input id="color-pink" type="checkbox" name="color-pink">
-            <label class="checkbox-btn" for="color-pink">
-              Розовый
-            </label>
-            <br>
-            <input id="color-orange" type="checkbox" name="color-orange">
-            <label class="checkbox-btn" for="color-orange">
-              Оранжевый
-            </label>
+
           </div>
         </div>
 
         <div class="form-order__backgr">
           <div class="container">
-            <div class="form-order__inner">
-              <p class="form-order__caption">ФИО</p>
+
+            <div class="form-order__block-wrapper">
+
+              <div class="form-order__inner">
+                <p class="form-order__caption">ФИО</p>
+              </div>
+
+              <div class="form-order__input-wrapper">
+
+                <label class="form-order__fio" for="person-name">
+                  Имя:
+                </label>
+                <input id="person-name" type="text" name="person-name" placeholder="Введите ваше имя" required>
+                <label class="form-order__fio" for="person-surename">
+                  Фамилия:
+                </label>
+                <input id="person-surename" type="text" name="person-surename" placeholder="Укажите фамилию" required>
+                <br>
+                <label class="form-order__fio" for="person-patronymic">
+                  Отчество:
+                </label>
+                <input id="person-patronymic" type="text" name="person-patronymic" placeholder="Отчество, если желаете">
+
+              </div>
+
             </div>
-            <label class="form-order__fio" for="person-name">
-              Имя:
-            </label>
-            <input id="person-name" type="text" name="person-name" placeholder="Введите ваше имя" required>
-            <label class="form-order__fio" for="person-surename">
-              Фамилия:
-            </label>
-            <input id="person-surename" type="text" name="person-surename" placeholder="Укажите фамилию" required>
-            <br>
-            <label class="form-order__fio" for="person-patronymic">
-              Отчество:
-            </label>
-            <input id="person-patronymic" type="text" name="person-patronymic" placeholder="Отчество, если желаете">
+
           </div>
         </div>
 
         <div class="form-order__backgr">
           <div class="container">
-            <div class="form-order__inner">
-              <p class="form-order__caption  form-order__caption--tel-mail">
-                Тел
-              </p>
+
+            <div class="form-order__block-wrapper">
+
+              <div class="form-order__inner">
+                <p class="form-order__caption  form-order__caption--tel-mail">
+                  Тел
+                </p>
+              </div>
+
+              <div class="form-order__input-wrapper">
+                <input id="phone" type="tel" name="phone" placeholder="+3 XXX XX XX" required>
+                <svg class="form-order__icon-phone" width="25" height="24">
+                  <use xlink:href="#icon-phone"></use>
+                </svg>
+              </div>
+
             </div>
-            <div class="form-order__input-wrapper">
-              <input id="phone" type="tel" name="phone" placeholder="+3 XXX XX XX" required>
-              <svg class="form-order__icon-phone" width="25" height="24">
-                <use xlink:href="#icon-phone"></use>
-              </svg>
+
+            <div class="form-order__block-wrapper">
+
+              <div class="form-order__inner">
+                <p class="form-order__caption  form-order__caption--tel-mail">
+                  E-mail
+                </p>
+              </div>
+
+              <div class="form-order__input-wrapper">
+                <input id="email" type="email" name="email" placeholder="Ваш Email" required>
+                <svg class="form-order__icon-mail" width="35" height="25">
+                  <use xlink:href="#icon-mail"></use>
+                </svg>
+              </div>
+
             </div>
-            <div class="form-order__inner">
-              <p class="form-order__caption  form-order__caption--tel-mail">
-                E-mail
-              </p>
-            </div>
-            <div class="form-order__input-wrapper">
-              <input id="email" type="email" name="email" placeholder="Ваш Email" required>
-              <svg class="form-order__icon-mail" width="35" height="25">
-                <use xlink:href="#icon-mail"></use>
-              </svg>
-            </div>
+
           </div>
         </div>
 
         <div class="form-order__backgr">
           <div class="container">
-            <div class="form-order__inner">
-              <p class="form-order__caption  form-order__caption--add">
-                Доп
-              </p>
-            </div>
-            <br>
-            <textarea id="add-text" name="add-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
 
-            <p class="form-order__note">Все поля обязательны для заполнения</p>
-            <button class="btn" type="submit" name="submit">Отправить</button>
+            <div class="form-order__block-wrapper">
+
+              <div class="form-order__inner">
+                <p class="form-order__caption  form-order__caption--add">
+                  Доп
+                </p>
+              </div>
+
+              <br>
+              <textarea id="add-text" name="add-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+
+            </div>
+
+            <div class="form-order__block-wrapper">
+              <p class="form-order__note">Все поля обязательны для заполнения</p>
+              <div class="form-order__submit-wrapper">
+                <button class="btn" type="submit" name="submit">Отправить заказ</button>
+              </div>
+            </div>
+
           </div>
         </div>
 

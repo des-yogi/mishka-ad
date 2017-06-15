@@ -4,9 +4,18 @@
   padding-bottom: 30px;
   border: 1px solid $border-color;
 
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   @media #{$tablet-width} {
     display: flex;
     flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 45px;
   }
 }
 
@@ -102,9 +111,14 @@
 
   @media #{$tablet-width} {
     font-size: $font-size-base;
+    line-height: $line-height-base;
   }
 
   p {
     margin-bottom: 23px;
+
+    @media #{$tablet-width} {
+      margin-bottom: 38px;
+    }
   }
 }
