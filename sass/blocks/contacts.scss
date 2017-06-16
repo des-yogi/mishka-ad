@@ -6,6 +6,13 @@
     padding-bottom: 57px;
   }
 
+  @media #{$desktop-width} {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 105px;
+  }
+
   h2 {
     margin-bottom: 30px;
     font-size: $font-size-base * 1.2;
@@ -17,6 +24,10 @@
       margin-bottom: 58px;
       font-size: 43px;
       line-height: auto;
+    }
+
+    @media #{$desktop-width} {
+      font-size: 53px;
     }
   }
 }
@@ -42,7 +53,26 @@
       background-position: 0 0;
       background-size: 100%;
       background-repeat: no-repeat;
+
+      @media #{$desktop-width} {
+        left: -105px;
+      }
     }
+  }
+
+  @media #{$desktop-width} {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
+.contacts__address-wrapper {
+  @media #{$desktop-width} {
+    width: 45%;
+    margin-left: 4.378%;
+    padding-left: 14.8%;
+    padding-right: 0;
+    padding-top: 85px;
   }
 }
 
@@ -54,6 +84,10 @@
 
   @media #{$tablet-width} {
     width: 50%;
+  }
+
+  @media #{$desktop-width} {
+    width: auto;
   }
 
   p,
@@ -91,6 +125,11 @@
 
 .contacts__address {
   margin-bottom: 35px;
+
+  @media #{$desktop-width} {
+    width: auto;
+    margin-bottom: 0;
+  }
 }
 
 .contacts__map {
@@ -108,6 +147,13 @@
     url(../img/icon-map-pin.svg) no-repeat 50% 50%,
     url(../img/map-tablet@1x.jpg) no-repeat 50% 50% #eae6dd;
   }
+
+  @media #{$desktop-width} {
+    width: 525px;
+    height: 457px;
+    margin-right: 4.378%;
+    margin-bottom: 0;
+  }
 }
 
 .contacts__write-us {
@@ -115,5 +161,14 @@
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+
+  button {
+    @media #{$desktop-width} {
+      position: absolute;
+      bottom: 105px;
+      left: 19.2%;
+    }
+
   }
 }

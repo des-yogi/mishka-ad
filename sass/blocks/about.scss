@@ -5,6 +5,11 @@
   @media #{$tablet-width} {
     padding-top: 60px;
   }
+
+  @media #{$desktop-width} {
+    padding-top: 73px;
+    padding-left: 16%;
+  }
 }
 
 .about__list {
@@ -26,6 +31,10 @@
     @media #{$tablet-width} {
       margin-bottom: 55px;
       font-size: 43px;
+    }
+
+    @media #{$desktop-width} {
+      font-size: 53px;
     }
   }
 }
