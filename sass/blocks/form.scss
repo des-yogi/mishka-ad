@@ -2,6 +2,10 @@
   @media #{$tablet-width} {
     padding-bottom: 25px;
   }
+
+  @media #{$desktop-width} {
+    padding-bottom: 70px;
+  }
 }
 
 .form-order__intro {
@@ -13,6 +17,9 @@
   @media #{$tablet-width} {
     font-size: 17px;
     line-height: 30px;
+  }
+  @media #{$desktop-width} {
+    padding: 0 16.6%;
   }
 }
 
@@ -26,6 +33,11 @@
     &:nth-child(2) {
       padding-top: 60px;
       padding-bottom: 40px;
+      @media #{$desktop-width} {
+        .form-order__block-wrapper {
+          padding-right: 0;
+        }
+      }
     }
     &:nth-child(3) {
       padding-top: 70px;
@@ -49,6 +61,16 @@
   @media #{$tablet-width} {
     display: flex;
   }
+
+  @media #{$desktop-width} {
+    padding-right: 16.6%;
+  }
+
+  &--submit {
+    @media #{$desktop-width} {
+      padding-left: 16.6%;
+    }
+  }
 }
 
 .form-order__inner {
@@ -57,6 +79,15 @@
 
   @media #{$tablet-width} {
     width: 25%;
+  }
+
+  @media #{$desktop-width} {
+    width: 16.6%;
+    margin-right: 33px;
+
+    &--color {
+      margin-right: 0;
+    }
   }
 
   &::after {
@@ -101,6 +132,10 @@
 
   @media #{$tablet-width} {
     background-color: transparent;
+  }
+
+  @media #{$desktop-width} {
+    padding-left: 55px;
   }
 }
 
@@ -177,6 +212,11 @@ textarea {
     width: 75%;
     margin-bottom: 53px;
   }
+
+  @media #{$desktop-width} {
+    width: 83.4%;
+    margin-bottom: 90px;
+  }
 }
 
 .form-order__note {
@@ -194,6 +234,10 @@ textarea {
   @media #{$tablet-width} {
     order: -1;
   }
+
+  /* @media #{$desktop-width} {
+    margin-left: 16.6%;
+  } */
 }
 
 .form-order__input-wrapper {
@@ -201,6 +245,10 @@ textarea {
 
   @media #{$tablet-width} {
     width: 75%;
+  }
+
+  @media #{$desktop-width} {
+    width: 83%;
   }
 
   .form-order__icon-phone,
@@ -223,6 +271,10 @@ textarea {
 .form-order_checkbox-wrapper {
   @media #{$tablet-width} {
     width: 50%;
+  }
+
+  @media #{$desktop-width} {
+    width: 30%;
   }
 }
 

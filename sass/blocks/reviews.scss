@@ -12,11 +12,23 @@
                 url(../img/review@1x.jpg) no-repeat left top;
     background-size: 104%, 350px 457px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/review@2x.jpg);
+      background-size: 350px 457px;
+      background-position: left top;
+    }
   }
 
   @media #{$desktop-width} {
     // margin: 0 4.378%;
     background-position: 50% 100%, 49px top;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url(../img/review@2x.jpg);
+      background-size: 350px 457px;
+      background-position: 49px top;
+    }
   }
 
   h2 {

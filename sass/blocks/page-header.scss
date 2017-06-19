@@ -20,6 +20,10 @@
     }
   }
 
+  @media #{$desktop-width} {
+    margin-bottom: 130px;
+  }
+
   h1 {
     padding-top: 71px;
     padding-bottom: 75px;
