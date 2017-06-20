@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
   }
 
-  outline: 1px solid blue;
+  // outline: 1px solid blue;
 }
 
 *,
@@ -39,6 +39,13 @@ p,
 blockquote {
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $title-color;
 }
 
 img {

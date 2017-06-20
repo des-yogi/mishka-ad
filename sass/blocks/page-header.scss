@@ -1,2 +1,42 @@
+.page-header__title {
+  position: relative;
+  background-color: $bg-second-color;
 
+  @media #{$tablet-width} {
+    margin-bottom: 76px;
 
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: -13px;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 26px;
+      background-image: url(../img/bg-zigzag-fill.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+    }
+  }
+
+  @media #{$desktop-width} {
+    margin-bottom: 130px;
+  }
+
+  h1 {
+    padding-top: 71px;
+    padding-bottom: 75px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: $font-weight--bold;
+    line-height: $line-height-base;
+    text-align: center;
+    color: $title-color;
+
+    @media #{$tablet-width} {
+      padding-top: 100px;
+      padding-bottom: 97px;
+    }
+  }
+}

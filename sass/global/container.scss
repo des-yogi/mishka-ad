@@ -10,6 +10,7 @@
 
   @media #{$desktop-width} {
     padding: 0 4.378%;
+    //max-width: 1200px;
   }
 
   /* @media #{$wide-desktop-width} {
@@ -18,7 +19,7 @@
     padding-right: $padding-computed + 50;
   } */
 
-  outline: 1px solid red;
+  // outline: 1px solid red;
 }
 
 .container-fixed {
@@ -33,5 +34,5 @@
     width: 91.244%;
   }
 
-  outline: 1px solid green;
+  // outline: 1px solid green;
 }

@@ -1,0 +1,151 @@
+.items {
+  @media #{$desktop-width} {
+    display: flex;
+    justify-align: space-between;
+  }
+}
+
+.item {
+  margin-bottom: 30px;
+  border: 1px solid $border-color;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  @media #{$tablet-width} {
+    display: flex;
+    justify-align: space-between;
+    margin-bottom: 54px;
+  }
+
+  @media #{$desktop-width} {
+    flex-direction: column;
+    justify-align: space-between;
+    width: 33.33%;
+    margin-right: 50px;
+  }
+
+  &:last-child {
+    @media #{$desktop-width} {
+      margin-right: 0;
+    }
+  }
+}
+
+.item__description {
+  width: auto;
+  margin: auto;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 28px;
+  padding-bottom: 27px;
+
+  @media #{$tablet-width} {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 32px;
+  }
+
+  @media #{$desktop-width} {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.item__photo {
+  display: block;
+  width: 100%;
+  margin: auto;
+
+  @media #{$tablet-width} {
+    margin: 0;
+  }
+
+  @media #{$desktop-width} {
+    width: 100%;
+  }
+}
+
+.item__title {
+  padding-bottom: 23px;
+  border-bottom: 1px solid $border-color;
+
+  @media #{$tablet-width} {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  @media #{$desktop-width}  {
+    margin-bottom: 40px;
+  }
+
+  h4 {
+    margin-bottom: 10px;
+    font-size: $font-size-base + 2px;
+    font-weight: $font-weight--bold;
+    line-height: 24px;
+    color: $title-color;
+
+    @media #{$tablet-width} {
+      font-size: 20px;
+    }
+  }
+  p {
+    font-size: $font-size-base - 2px;
+    color: $text-color;
+
+    @media #{$tablet-width} {
+      font-size: $font-size-base;
+    }
+  }
+}
+
+.item__price {
+  padding-top: 25px;
+  //padding-bottom: 22px;
+
+  @include clearfix();
+
+  &--text {
+    display: block;
+    float: left;
+    font-size: $font-size-base;
+    font-weight: $font-weight--bold;
+    line-height: 24px;
+    color: $title-color;
+
+    @media #{$tablet-width} {
+      font-size: 17px;
+    }
+  }
+
+  &--icon {
+    display: block;
+    float: right;
+    width: 21px;
+    height: 19px;
+    opacity: 0.3;
+    cursor: pointer;
+
+    &:hover {
+      fill: $icon-hvr-color;
+      opacity: 1;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  @media #{$tablet-width} {
+    padding-top: 20px;
+    border-top: 1px solid $border-color;
+  }
+}

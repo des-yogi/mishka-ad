@@ -1,0 +1,13 @@
+.s-block-link {
+  @include text-hide();
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  &:hover {
+    fill: $icon-hvr-color  ;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
